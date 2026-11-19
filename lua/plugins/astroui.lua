@@ -1,0 +1,85 @@
+---@type LazySpec
+return {
+  "AstroNvim/astroui",
+  ---@type AstroUIOpts
+  opts = {
+    colorscheme = "astrodark",
+  },
+  specs = {
+    {
+      "AstroNvim/astrotheme",
+      opts = {
+        -- AstroDark, mais fond noir et couleurs plus saturées.
+        palettes = {
+          astrodark = {
+            ui = {
+              base = "#000000",
+              inactive_base = "#050505",
+              tabline = "#000000",
+              statusline = "#050505",
+              split = "#0A0A0A",
+              float = "#0A0A0A",
+              tool = "#0A0A0A",
+              prompt = "#0D0F13",
+              border = "#2A2E36",
+              current_line = "#0E1015",
+              highlight = "#15181E",
+              selection = "#1B3A57",
+              menu_selection = "#1B3A57",
+              scrollbar = "#5CC8FF",
+              winbar = "#A8ADB8",
+              text = "#C7CBD4",
+              text_active = "#E8EAF0",
+              text_inactive = "#5B606C",
+              none_text = "#3B404B",
+              text_match = "#FFFFFF",
+              accent = "#5CC8FF",
+              title = "#5CC8FF",
+              red = "#FF4D6D",
+              orange = "#FF9E3D",
+              yellow = "#FFC93C",
+              green = "#3DDC84",
+              cyan = "#22D3EE",
+              blue = "#4DA6FF",
+              purple = "#C084FC",
+            },
+            syntax = {
+              red = "#FF5C7A",
+              orange = "#FFA657",
+              yellow = "#FFD866",
+              green = "#7EE787",
+              cyan = "#39E5D4",
+              blue = "#79C0FF",
+              purple = "#D2A8FF",
+              text = "#D6DAE3",
+              comment = "#7D838F",
+              mute = "#666C78",
+            },
+            -- Les couleurs du terminal sont calculées au chargement du thème :
+            -- il faut les redéfinir ici pour qu'elles suivent la palette.
+            term = {
+              black = "#0A0A0A",
+              bright_black = "#3B404B",
+              red = "#FF5C7A",
+              bright_red = "#FF8FA3",
+              green = "#7EE787",
+              bright_green = "#A7F3B8",
+              yellow = "#FFD866",
+              bright_yellow = "#FFE99A",
+              blue = "#79C0FF",
+              bright_blue = "#A5D6FF",
+              purple = "#D2A8FF",
+              bright_purple = "#E2C4FF",
+              cyan = "#39E5D4",
+              bright_cyan = "#7DF3E7",
+              white = "#D6DAE3",
+              bright_white = "#FFFFFF",
+              background = "#000000",
+              foreground = "#D6DAE3",
+            },
+          },
+        },
+      },
+    },
+  },
+}
