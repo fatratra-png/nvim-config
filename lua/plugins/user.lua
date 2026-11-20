@@ -44,4 +44,14 @@ return {
       }
     end,
   },
+
+  -- Explorateur ouvert au démarrage, comme VS Code
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    init = function()
+      vim.api.nvim_create_autocmd("VimEnter", {
+        callback = function() vim.cmd "Neotree show" end,
+      })
+    end,
+  },
 }
